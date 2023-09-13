@@ -67,3 +67,25 @@ const copyright = document.createElement("p");
 copyright.innerHTML = "Chris Tang" + " " +  thisYear;
 
 footer.appendChild(copyright);
+
+
+
+const githubRequest = new XMLHttpRequest();
+githubRequest.open('GET',"https://api.github.com/users/kmtangchris/repos");
+githubRequest.send();
+githubRequest.addEventListener("load", function(event){
+    if (githubRequest.status === 200){
+	const repositories = JSON.parse(githubRequest.response);
+	console.log('GitHub Repositories:', repositories);
+	}
+    });
+
+const projectSection = document.getElementById('projects');
+const projectList = prokectSection.querySelector('ul');
+
+for (let i=0; i <  repositories.length; i++){
+    let project = document.createElement('li'); 
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+}
+
