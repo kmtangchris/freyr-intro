@@ -30,6 +30,7 @@ ul.experience li {
     padding: 15px; 
 }
 
+
 .experience-container {
     display: flex;
     justify-content: space-evenly;
@@ -101,3 +102,4 @@ footer {
 
 @media (max-width: 1921px) {
 }
+
