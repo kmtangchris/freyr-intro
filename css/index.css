@@ -1,6 +1,6 @@
 body {
-    background-color: #A7F3EF; 
-    color: #ced5d5;
+    background-color: #F0F8F8; 
+    color: #848989;
     font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -20,13 +20,13 @@ section{
 h1{
     font-size: 30px;
     font-weight: bold;
-    color: #ebbcd0;
+    color: #3E4343;
 
 }
 
 ul.experience li {
     display: block;
-    background-color: #9bccd1;
+    background-color: #F0F8F8;
     padding: 15px; 
 }
 
@@ -88,14 +88,14 @@ ul.messages li {
 button[type="submit"] {
     padding: 10px 20px;
     background-color: #000000;
-    border: 1px solid #fbfcfa;
+    border: 2px solid #fbfcfa;
     color: white;
 }   
 
 footer {
     padding: 20px;
     border: 1px solid #f0ec7d;
-    background-color: #f0f0f0;
+    background-color: #fbfcfa;
 }
 
 
